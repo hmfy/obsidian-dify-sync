@@ -1,0 +1,11 @@
+{
+	"id": "dify-sync-plugin",
+	"name": "Dify Sync Plugin",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Sync Obsidian notes to Dify knowledge base with automatic vectorization",
+	"author": "CodeBuddy",
+	"authorUrl": "",
+	"fundingUrl": "",
+	"isDesktopOnly": false
+}

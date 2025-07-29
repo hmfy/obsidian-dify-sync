@@ -1,0 +1,264 @@
+/* Dify Sync Plugin Styles */
+
+.dify-sync-ribbon-class {
+    color: var(--text-muted);
+}
+
+.dify-sync-ribbon-class:hover {
+    color: var(--text-normal);
+}
+
+.dify-sync-error {
+    color: var(--text-error) !important;
+    font-weight: bold;
+}
+
+.dify-sync-success {
+    color: var(--text-success) !important;
+}
+
+/* Settings page styling */
+.dify-sync-settings h2 {
+    margin-bottom: 1em;
+    color: var(--text-normal);
+}
+
+.dify-sync-settings .setting-item-description {
+    color: var(--text-muted);
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+/* Status bar styling */
+.status-bar-item.dify-sync-error {
+    background-color: var(--background-modifier-error);
+    color: var(--text-error);
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+/* Sync button styling */
+.setting-item button.mod-cta {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.setting-item button.mod-cta:hover {
+    background-color: var(--interactive-accent-hover);
+}
+
+/* Multi-Folder Selector Modal Styles */
+.folder-selector-description {
+    color: var(--text-muted);
+    font-size: 0.9em;
+    margin-bottom: 16px;
+}
+
+.folder-control-buttons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    justify-content: center;
+}
+
+.folder-control-buttons button {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--background-modifier-border);
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.folder-control-buttons button:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.folder-control-buttons button.mod-cta {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    border-color: var(--interactive-accent);
+}
+
+.folder-control-buttons button.mod-cta:hover {
+    background-color: var(--interactive-accent-hover);
+}
+
+.folders-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.folder-option {
+    padding: 8px 12px;
+    margin: 4px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid var(--background-modifier-border);
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.folder-option:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.folder-option.multi-select {
+    border: 1px solid var(--background-modifier-border);
+}
+
+.folder-option.multi-select.selected {
+    background-color: var(--background-modifier-success);
+    border-color: var(--text-success);
+}
+
+.folder-option.multi-select.selected:hover {
+    background-color: var(--background-modifier-success-hover);
+}
+
+.folder-option input[type="checkbox"] {
+    margin: 0;
+    cursor: pointer;
+}
+
+.folder-label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.folder-icon {
+    font-size: 14px;
+}
+
+.folder-name {
+    font-size: 14px;
+    color: var(--text-normal);
+}
+
+/* Tree structure styles */
+.tree-prefix {
+    color: var(--text-muted);
+    font-family: 'Courier New', Consolas, monospace;
+    font-size: 12px;
+    white-space: pre;
+    user-select: none;
+}
+
+.folder-children-count {
+    color: var(--text-muted);
+    font-size: 11px;
+    font-weight: normal;
+    margin-left: 4px;
+}
+
+.tree-node {
+    padding: 4px 8px;
+    margin: 1px 0;
+}
+
+.tree-node .folder-label {
+    font-family: inherit;
+    line-height: 1.4;
+}
+
+.tree-node .folder-name {
+    font-weight: normal;
+}
+
+.modal-button-container {
+    margin-top: 16px;
+    text-align: center;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.modal-button-container button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid var(--background-modifier-border);
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    cursor: pointer;
+}
+
+.modal-button-container button:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.modal-button-container button.mod-cta {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    border-color: var(--interactive-accent);
+}
+
+.modal-button-container button.mod-cta:hover {
+    background-color: var(--interactive-accent-hover);
+}
+
+/* Folder input styling */
+.obsidian-folders-input {
+    background-color: var(--background-secondary) !important;
+    color: var(--text-muted) !important;
+}
+
+/* Legacy support for old class name */
+.obsidian-folder-input {
+    background-color: var(--background-secondary) !important;
+    color: var(--text-muted) !important;
+}
+
+/* Sync Progress Notices */
+.notice.dify-sync-progress {
+    background-color: var(--background-primary);
+    border-left: 4px solid var(--interactive-accent);
+    font-family: 'Courier New', Consolas, monospace;
+    white-space: pre-line;
+    min-width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.notice.dify-sync-complete {
+    background-color: var(--background-modifier-success);
+    border-left: 4px solid var(--text-success);
+    white-space: pre-line;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.notice.dify-sync-error-notice {
+    background-color: var(--background-modifier-error);
+    border-left: 4px solid var(--text-error);
+    white-space: pre-line;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Progress bar styling */
+.dify-sync-progress .notice-text {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* Enhanced status bar for sync states */
+.status-bar-item.dify-sync-syncing {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    padding: 2px 6px;
+    border-radius: 3px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
